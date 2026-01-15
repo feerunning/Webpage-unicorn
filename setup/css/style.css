@@ -1,0 +1,253 @@
+
+
+html body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.background {
+   position: fixed;
+   inset: 0; 
+   width: 100vw;   
+   height: 100vh;
+   top: 0%;
+  left: 0%;
+  z-index: -10;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* die seite läst sich nicht scrollen */
+}
+.deckkraft{
+  position: fixed;
+   inset: 0; 
+   width: 100vw;   
+   height: 100vh;
+   background-color: beige;
+   top: 0%;
+  left: 0%;
+  z-index: 0;
+  opacity:0;
+  transition: opacity 0.3s ease;
+}
+
+h1{
+  font-size: 50px;
+  color: blueviolet;
+  position: fixed;
+     top: 5%;
+  left: 45%;
+}
+.einhorn-container {
+  position: relative;    /* damit Kopf & Körper übereinander liegen */
+  display: inline-block; /* passt sich Bildgröße an */
+  cursor: pointer;       /* optional: zeigt Hoverbarkeit */
+}
+
+/* Kopf ist immer sichtbar */
+.kopf1 {
+  position: absolute;
+  top: 10%;         /* anpassen, damit Kopf & Körper korrekt ausgerichtet sind */
+  left: 17%;
+  z-index: 2;
+  transform: scale(0.3)
+}
+
+
+/* Körper erscheint beim Hover über den Kopf */
+.kopf:hover + .koerper {
+  opacity: 1;
+  size: +2%;
+}
+
+.HLvorn1:hover{
+  transform: scale(0.33);
+}
+
+.kopf:hover + .deckkraft {  /* das klappt noch nicht!! */
+  opacity: 0.5;
+}
+
+
+.körper1 {
+  position: absolute;
+  top: 22.5%;       
+  left: 31%;
+  z-index: 2;
+  transform: scale(0.3);
+}
+.körper1:hover{
+  transform: scale(0.33);
+}
+.nacken1 {
+  position: absolute;
+  top: 28.5%; 
+  left: 30%;
+  z-index: 0;
+  transform: scale(0.3);
+}
+.nacken1:hover{
+  transform: scale(0.33);
+}
+.haare1 {
+  position: absolute;
+  top: -9.2%;         /* anpassen, damit Kopf & Körper korrekt ausgerichtet sind */
+  left: 23.8%;
+  z-index: 3; 
+  transform: scale(0.3);
+}
+.haare1:hover{
+  transform: scale(0.33);
+}
+.auge1 {
+  position: absolute;
+  top: 18%;        
+  left:29%;
+  z-index: 3; 
+  transform: scale(0.3);
+}
+.auge1:hover{
+  transform: scale(0.33);
+}
+.HLhinten1 {
+  position: absolute;
+  top: 43%;        
+  left: 32.2%;
+  z-index: 0;   
+  transform: scale(0.3);
+}
+.HLhinten1:hover{
+  transform: scale(0.33);
+}
+.HLvorn1 {
+  position: absolute;
+  top: 15.7%;        
+  left: 40%;
+  z-index: 1;  
+  transform: scale(0.3);
+}
+.HLvorn1:hover{
+  transform: scale(0.33);
+}
+.VLhinten1 {
+  position: absolute;
+  top: 34%;        
+  left: 31.5%;
+  z-index: 2;  
+  transform: scale(0.3);
+}
+.VLhinten1:hover{
+  transform: scale(0.33);
+}
+.VLvorn1 {
+  position: absolute;
+  top: 20.5%;        
+  left: 3.6%;
+  z-index: 2; 
+  transform: scale(0.3);
+}
+.VLvorn1:hover{
+  transform: scale(0.33);
+}
+.schweif1 {
+  position: absolute;
+  top: -1.2%;        
+  left: 42.6%;
+  z-index: 3;  
+  transform: scale(0.3);    
+}
+.schweif1:hover{
+  transform: scale(0.33);
+}
+.ass1 {
+  position: absolute;
+  top: 14.8%;        
+  left: 37.6%;
+  z-index: 2; 
+  transform: scale(0.3);
+}
+.ass1:hover{
+  transform: scale(0.33);
+}
+.horn1 {
+  position: absolute;
+  top: 5%;        
+  left: 29%;
+  z-index: 0; 
+  transform: scale(0.3);
+}
+.horn1:hover{
+  transform: scale(0.33);
+}
+.neuganz1 {
+  position: absolute;
+  top: -150%;        
+  left: -35%;
+  z-index: -1; 
+  transform: scale(0.3);
+  opacity: 0;
+}
+.abdecken{
+  position: absolute;
+   background-color: beige;
+   top: 41%;
+   left: 39%;
+  width: 30px;
+  height: 30px;
+  z-index: -2;
+}
+
+.Unitext{
+ position: absolute;
+   top: -44%;
+   left: -52%;
+   z-index: 6;
+   transform: scale(0.09);
+}
+.Corntext{
+   position: absolute;
+   top: -44%;
+   left: 29%;
+   z-index: 6;
+   transform: scale(0.09);
+}
+.Jahrtext{
+   position: absolute;
+   top: -182%;
+   left: -23%;
+   z-index: 6;
+   transform: scale(0.08);
+}
+.Januartext{
+   position: absolute;
+   top: -182%;
+   left: -99%;
+   z-index: 6;
+   transform: scale(0.08);
+}
+
+.Unitext:hover {
+  transform: scale(0.085);
+}
+.Corntext:hover {
+  transform: scale(0.085);
+}
+.kopf1:hover{
+  transform: scale(0.33);
+}
+.blur1 {
+  position: absolute;
+  top: -121%;        
+  left: -65%;
+  z-index: -1; 
+  transform: scale(0.23);
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
