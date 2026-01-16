@@ -72,14 +72,14 @@ h1{
 
 
 
-.körper1 {
+.koerper1 {
   position: absolute;
   top: 22.5%;       
   left: 31%;
   z-index: 2;
   transform: scale(0.3);
 }
-.körper1:hover{
+.koerper1:hover{
   transform: scale(0.33);
 }
 .nacken1 {
@@ -312,7 +312,7 @@ h1{
   left: -217%;
   transform: scale(0.19);
 }
-#körper2 {
+#koerper2 {
   position: absolute;
   z-index: 14; 
   top: -218%;
